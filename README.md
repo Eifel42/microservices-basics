@@ -9,6 +9,12 @@ This repository contains some basic UML Diagrams for presentations and microserv
 ## Microservices Webshop
 ![Microservices Webshop](microservices/microservices.png)
 
+### Business Process Engine
+![Business Process Engine](application-process/application-process.png)
+
+### Compose Microservice / HATEOS
+![Compose Microservice](application-mainservices/application-mainservices.png)
+
 ## Application Gateway
 ![Application Gateway](application-gateway/application-gateway.png)
 
