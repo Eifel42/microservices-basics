@@ -1,4 +1,4 @@
-# Microservices Examples
+# Microservices Basics
 This repository contains some basic UML Diagrams for presentiations and microservices examples.
 
 ## Simple Maven
