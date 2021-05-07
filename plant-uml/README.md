@@ -5,9 +5,14 @@ This repository contains some basic UML Diagrams for presentations and microserv
 ## J2EE Webshop Monolith
 ![J2EE Webshop](monolith/monolith.png)
 
-
 ## Microservices Webshop
 ![Microservices Webshop](microservices/microservices.png)
+
+### Business Process Engine
+![Business Process Engine](application-process/application-process.png)
+
+### Compose Microservice / HATEOS
+![Compose Microservice](application-mainservices/application-mainservices.png)
 
 ## Application Gateway
 ![Application Gateway](application-gateway/application-gateway.png)
@@ -23,4 +28,6 @@ This repository contains some basic UML Diagrams for presentations and microserv
 
 ## DockerImages
 ![DockerImages](docker-images-Inheritance/docker-images-Inheritance.png)
+
+
 
