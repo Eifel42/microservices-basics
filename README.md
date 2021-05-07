@@ -20,6 +20,9 @@ This repository contains some basic UML Diagrams for presentiations and microser
 ## Monitoring
 - This section covers some issues around the monitoring of JVMs [Monitoring](monitoring.md).
 
+## Kubernetes
+- The linked section covers useful links and issues around [Kubernetes](kubernetes.md).
+
 ## Cheat Sheet
 - A list of valuable sheets in the context of DevOps and microservices [Cheat Sheets](cheat-sheets.md).
 
