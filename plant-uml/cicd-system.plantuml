@@ -1,0 +1,27 @@
+@startuml
+    skinparam componentStyle rectangle
+
+    package "Local PC" {
+        component [Developer 1] as d1
+    }
+
+    package "CI/CD System" {
+        component [Version Control - Git] as vc
+        component [Build Server - Jenkins] as bs
+        component [Artefact Repository - Nexus] as nexus
+        component [Code Quality - sonarqube] as sq
+    }
+
+    package "Production Server" {
+        component [Microservices 1] as ms1
+        component [Microservices 1] as ms2
+    }
+
+    d1 <-> vc 
+    vc -> bs 
+    bs -> nexus
+    bs --> sq
+    nexus --> ms1
+    nexus --> ms2
+   
+@enduml

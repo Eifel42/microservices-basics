@@ -1,0 +1,12 @@
+@startuml
+    package "DockerImages" {
+        class JavaBase 
+        class Monitored
+        class Production
+        class Develop
+
+        JavaBase <|-- Monitored
+        Monitored <|-- Production
+        Monitored <|-- Develop
+    }
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+    node "Webserver" {
+        HTTPS - [Frontend]
+    }
+
+    node "Docker Container Customer" {
+        () "api" as api_c
+        api_c - [Microservice Customer]
+    }
+
+    database "customer database" {
+        [db_customer]     
+    }
+
+    node "Docker Container Order" {
+        () "api" as api_o
+        api_o - [Microservice Order]
+    }
+
+    database "order database" {
+        [db_order]     
+    }
+
+    node "Docker Container Stock" {
+        () "api" as api_s
+        api_s - [Microservice Stock]
+    }
+
+    database "stock database" {
+        [db_stock]     
+    }
+
+    [Frontend] <--> [api_c]
+    [Microservice Customer] <--> [db_customer]
+    [Frontend] <--> [api_o]
+    [Microservice Order] <--> [db_order]
+    [Frontend] <--> [api_s]
+    [Microservice Stock] <--> [db_stock]
+@enduml

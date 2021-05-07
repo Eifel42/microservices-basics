@@ -1,0 +1,22 @@
+@startuml
+
+
+package "Web Shop" {
+    node "J2EE Application Server" {
+        frame "Enterprise Application Archive (EAR)" {
+            HTTPS - [Frontend] 
+            Ports - [Business Logic]
+            [Frontend] <--> Ports 
+        }
+    }
+
+    database "database" {
+        jdbc - [data]     
+    }
+
+    [Business Logic] <--> [jdbc]
+}
+
+
+
+@enduml

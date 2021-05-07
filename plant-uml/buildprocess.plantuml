@@ -1,0 +1,26 @@
+@startuml
+    skinparam componentStyle rectangle
+
+    package "Local PC Company" {
+        component [Developer 1] as d1
+    }
+
+    package "Local PC Homeoffice" {
+        component [Developer 2] as d2
+    }
+
+    package "CI/CD System" {
+        component [Version Control - Git] as vc
+        component [Build Server - Jenkins] as bs
+        component [Artefact Repository - Nexus] as nexus
+    }
+    
+    d1 <--> vc 
+    d2 <--> vc
+    vc -> bs 
+    bs -> nexus
+   
+
+
+
+@enduml

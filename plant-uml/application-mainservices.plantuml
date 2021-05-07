@@ -1,0 +1,33 @@
+@startuml
+    node "Webserver" {
+        HTTPS - [Frontend]
+    }
+
+    node "Compose Service" {
+        () "HATEOS" as api_z 
+        [Microservice Order Process] as sz
+        api_z - sz
+    }
+
+    node "Customer" {
+        () "api" as api_c
+        api_c - [Microservice Customer]
+    }
+
+   
+    node "Order" {
+        () "api" as api_o
+        api_o - [Microservice Order]
+    }
+
+   
+    node "Stock" {
+        () "api" as api_s
+        api_s - [Microservice Stock]
+    }
+
+    [Frontend] <--> api_z 
+    sz <--> [api_c]
+    sz <--> [api_o]
+    sz <--> [api_s]
+   @enduml
